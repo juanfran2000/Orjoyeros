@@ -38,7 +38,7 @@ const socialMedia = [
 export default function Home() {
   return (
     <div className=" w-full h-[700px]">
-      <div className="w-full h-[270px] flex justify-center">
+      <div className="w-full h-[260px] flex justify-center">
         <Image
           src="/diamante.jpg"
           alt="imagen portada"
