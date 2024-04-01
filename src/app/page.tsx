@@ -2,35 +2,38 @@ import Image from "next/image";
 
 const items = [
   {
-    icon: "icon-[fa6-solid--map-pin]",
+    icon: "icon-[emojione--deciduous-tree]",
     text: "Centro Comercial El Bosque Local 45.",
   },
-  { icon: "icon-[ls--iphone]", text: "Asesoria gratuita mediante whatsapp." },
   {
-    icon: "icon-[guidance--24-hours]",
-    text: "Fabricacion inmediata en 24 horas.",
+    icon: "icon-[emojione--mobile-phone]",
+    text: "Asesoría gratuita mediante Whatsapp.",
   },
   {
-    icon: "icon-[solar--box-bold-duotone]",
-    text: "Envio a todo el Ecuador 100% seguro.",
+    icon: "icon-[fxemoji--alarmclock]",
+    text: "Fabricación inmediata en 24 horas.",
+  },
+  {
+    icon: "icon-[flat-ui--box]",
+    text: "Envío a todo el Ecuador 100% seguro.",
   },
 ];
 
 const socialMedia = [
   {
-    icon: "icon-[basil--facebook-solid]",
+    icon: "icon-[logos--facebook]",
     link: "https://www.facebook.com/doraamparo.ruizmiranda/?locale=es_LA",
   },
   {
-    icon: "icon-[basil--instagram-outline]",
+    icon: "icon-[skill-icons--instagram]",
     link: "https://www.instagram.com/orjoyeros_ec/",
   },
   {
-    icon: "icon-[akar-icons--tiktok-fill]",
+    icon: "icon-[ant-design--tik-tok-filled]",
     link: "https://www.tiktok.com/@doraamparoruizmir",
   },
   {
-    icon: "icon-[basil--map-location-outline]",
+    icon: "icon-[logos--google-maps]",
     link: "https://maps.app.goo.gl/NCzDoMPnvRPwCREv8",
   },
 ];
@@ -51,7 +54,11 @@ export default function Home() {
         <div className="flex">
           <div className="bg-white w-6/12 h-32 flex justify-center items-center">
             <div className="w-11/12 flex flex-col justify-center items-center text-2xl">
-              <span className={`${items[0].icon}`} />
+              <img
+                src="/logo-elbosque.svg"
+                alt="logo el bosque"
+                className="w-6"
+              />
               <h2 className="text-xs text-center mt-2">{items[0].text}</h2>
             </div>
           </div>
@@ -83,7 +90,7 @@ export default function Home() {
         <div className="flex justify-center mt-0">
           <a
             href="https://api.whatsapp.com/send/?phone=593992392703&text=Hola,%20vi%20sus%20redes%20y%20deseo%20información%20sobre%20sus%20anillos"
-            className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group"
+            className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-green-100 border border-green-100 rounded-lg shadow-inner group"
           >
             <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-green-400 group-hover:w-full ease"></span>
             <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-green-400 group-hover:w-full ease"></span>
